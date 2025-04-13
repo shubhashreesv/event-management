@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.react-datepicker {
+  @apply font-sans border-0 shadow-lg;
+}
+
+.react-datepicker__header {
+  @apply bg-white border-b border-gray-200 rounded-t-lg;
+}
+
+.react-datepicker__current-month {
+  @apply text-gray-900 font-semibold mb-2;
+}
+
+.react-datepicker__day-name {
+  @apply text-gray-500 w-8 h-8 leading-8;
+}
+
+.react-datepicker__day {
+  @apply text-gray-700 w-8 h-8 leading-8 rounded-full hover:bg-primary-50 hover:text-primary-600;
+}
+
+.react-datepicker__day--selected {
+  @apply bg-primary-600 text-white hover:bg-primary-700;
+}
+
+.react-datepicker__day--today {
+  @apply font-semibold;
+}
+
+.react-datepicker__navigation {
+  @apply top-3;
+}
+
+.react-datepicker__navigation--previous {
+  @apply left-3;
+}
+
+.react-datepicker__navigation--next {
+  @apply right-3;
+}
